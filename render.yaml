@@ -6,5 +6,5 @@ services:
     startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
-      - key: GOOGLE_APPLICATION_CREDENTIALS_JSON
+      - key: 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
         sync: false

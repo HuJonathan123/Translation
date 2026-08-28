@@ -51,6 +51,11 @@ def validate_language_code(language_code: str, field_name: str) -> None:
         )
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    return {"service": "Translator API", "status": "ok"}
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
